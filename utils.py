@@ -50,7 +50,7 @@ def process_command_args(arguments):
     w_texture = 3
     w_tv = 1/400
 
-    dped_dir = 'dped/'
+    dped_dir = 'dped'
     vgg_dir = 'vgg_pretrained/imagenet-vgg-verydeep-19.mat'
     eval_step = 1000
 
