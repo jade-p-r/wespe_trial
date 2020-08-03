@@ -11,6 +11,7 @@ import models
 import utils
 import vgg
 from tqdm import tqdm
+import os
 # defining size of the training image patches
 
 PATCH_WIDTH = 100
@@ -28,6 +29,7 @@ np.random.seed(0)
 # loading training and test data
 
 print("Loading test data...")
+print(os.listdir(os.getcwd()))
 files = os.listdir('storage')
 print(files)
 test_data, test_answ = load_test_data(phone, dped_dir, PATCH_SIZE)
