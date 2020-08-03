@@ -30,8 +30,7 @@ np.random.seed(0)
 
 print("Loading test data...")
 print(os.listdir(os.getcwd()))
-files = os.listdir('storage')
-print(files)
+
 test_data, test_answ = load_test_data(phone, dped_dir, PATCH_SIZE)
 print("Test data was loaded\n")
 
