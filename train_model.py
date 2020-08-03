@@ -1,3 +1,9 @@
+datasets: [
+    {
+        "uri": "s3://ouiflash-datascience/paperspace/wespe/vgg_pretrained/imagenet-vgg-verydeep-19.mat",
+        "name": "vgg",
+    },
+]
 # python train_model.py model={iphone,sony,blackberry} dped_dir=dped vgg_dir=vgg_pretrained/imagenet-vgg-verydeep-19.mat
 
 import tensorflow as tf
