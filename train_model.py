@@ -5,8 +5,8 @@ datasets: [
     },
 ]
 # python train_model.py model={iphone,sony,blackberry} dped_dir=dped vgg_dir=vgg_pretrained/imagenet-vgg-verydeep-19.mat
-
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from scipy import misc
 import numpy as np
 import sys
