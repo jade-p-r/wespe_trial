@@ -1,7 +1,6 @@
 datasets: [
     {
         "uri": "s3://ouiflash-datascience/paperspace/wespe/vgg_pretrained/imagenet-vgg-verydeep-19.mat",
-        "name": "vgg",
     },
 ]
 # python train_model.py model={iphone,sony,blackberry} dped_dir=dped vgg_dir=vgg_pretrained/imagenet-vgg-verydeep-19.mat
@@ -36,7 +35,8 @@ np.random.seed(0)
 
 print("Loading test data...")
 print(os.listdir(os.getcwd()))
-
+print(os.listdir(os.path.join(os.getcwd(), 'vgg_pretrained')))
+print(os.listdir(os.path.abspath(os.path.join(os.getcwd(), os.pardir))))
 test_data, test_answ = load_test_data(phone, dped_dir, PATCH_SIZE)
 print("Test data was loaded\n")
 
