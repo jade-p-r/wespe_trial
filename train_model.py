@@ -40,6 +40,8 @@ print(os.listdir(os.path.abspath(os.path.join(os.getcwd(), os.pardir))))
 print(os.listdir(os.path.abspath(os.path.join(os.getcwd(), os.pardir, 'datasets'))))
 print(os.listdir(os.path.abspath(os.path.join(os.getcwd(), os.pardir, 'paperspace'))))
 print(os.listdir(os.path.abspath(os.path.join(os.getcwd(), os.pardir, 'storage'))))
+print(os.listdir(os.path.abspath(os.path.join(os.getcwd(), os.pardir, 'storage', 'data'))))
+print(os.listdir(os.path.abspath(os.path.join(os.getcwd(), os.pardir, 'vgg_pretrained'))))
 test_data, test_answ = load_test_data(phone, dped_dir, PATCH_SIZE)
 print("Test data was loaded\n")
 
